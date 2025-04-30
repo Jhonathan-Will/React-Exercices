@@ -1,0 +1,11 @@
+.containerAmarelo{
+    background-color: yellow;
+    min-width: 750px;
+    min-height: 250px;
+}
+
+.containerAzul{
+    background-color: blue;
+    min-width: 250px;
+    min-height: 250px;
+}
