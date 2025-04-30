@@ -1,18 +1,13 @@
 import { useState } from "react";
 import { useLongPress } from "@uidotdev/usehooks";
 
-import "./exercice.css";
-
 const Exercice = () => {
-    const [count, setCount] = useState(0); 
-    const text = document.getElementById("text");
+    const [count, setCount] = useState(0);
 
     const handlePlusPress = useLongPress(
         () => {
             let newCount = count + 3
             setCount(newCount)
-            text.innerHTML = newCount
-            console.log(newCount)
         },
         {
           threshold: 500,
@@ -23,8 +18,6 @@ const Exercice = () => {
         () => {
             let newCount = count - 3
             setCount(newCount)
-            text.innerHTML = newCount
-            console.log(newCount)
         },
         {
           threshold: 500,
@@ -35,30 +28,22 @@ const Exercice = () => {
         if(value === 0) {
             let newCount = count + 1
             setCount(newCount)
-            text.innerHTML = newCount
-            console.log(newCount)
         }else if(value === 1){
             let newCount = count + 2
             setCount(newCount)
-            text.innerHTML = newCount
-            console.log(newCount)
         }else if(value === 2){
             let newCount = count - 1
             setCount(newCount)
-            text.innerHTML = newCount
-            console.log(newCount)
         }else{
             let newCount = count - 2
             setCount(newCount)
-            text.innerHTML = newCount
-            console.log(newCount)
         }
     }
 
     return(
         <>
             <div>
-                <h2 id="text">0</h2>
+                <h2 id="text">{count}</h2>
 
                 <button onClick={() => handleCount(0)}>+1</button>
                 <button onClick={() => handleCount(1)}>+2</button>

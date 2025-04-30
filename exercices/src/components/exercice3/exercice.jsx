@@ -1,5 +1,6 @@
 import { useState } from "react"
 
+import "./exercice.css"
 const Exercice = () => {
     const style1 = "containerAmarelo"
     const style2 = "containerAzul"
@@ -17,19 +18,15 @@ const Exercice = () => {
         <>
             <div>
             <button className={container1} onClick={() => handleChange(container1, setContainer1)}>
-                <div className={container1} id="div1">a</div>
             </button>
 
-            <button onClick={() => handleChange(container2, setContainer2)}>
-                <div className={container2} id="div2">b</div>
+            <button className={container2} onClick={() => handleChange(container2, setContainer2)}>
             </button>
 
-            <button onClick={() => handleChange(container3, setContainer3)}>
-                <div className={container3} id="div3">c</div>
+            <button className={container3} onClick={() => handleChange(container3, setContainer3)}>
             </button>
 
-            <button onClick={() => handleChange(container4, setContainer4)}>
-                <div className={container4} id="div4">d</div>
+            <button className={container4} onClick={() => handleChange(container4, setContainer4)}>
             </button>
             </div>
         </>
