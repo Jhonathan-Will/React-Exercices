@@ -1,0 +1,33 @@
+.light{
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.light button{
+    background-color: #008cff;
+    color: #fff;
+    border: 1px solid #008cff;
+    border-radius: 5px;
+}
+
+.light div {
+    background-color: #008cff;
+    color: #000;
+}
+
+.dark{
+    background-color: #000;
+    color: #fff;
+}
+
+.dark button{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.dark div {
+    background-color: #fff;
+    color: #000;
+}
